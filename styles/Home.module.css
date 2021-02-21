@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #f8a1d1;
 }
 
 .main {
@@ -49,7 +50,9 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3rem;
+  color: #6D0200;
+  opacity: 0.7;
 }
 
 .title,
