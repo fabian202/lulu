@@ -1,11 +1,13 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
+import TestComponent from '../components/TestComponent';
 
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <TestComponent text="on Home" />
       <Head>
         <title>LU~LU~</title>
         <link rel="icon" href="/favicon.ico" />

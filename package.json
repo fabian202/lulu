@@ -5,11 +5,29 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "start": "next start -p $PORT",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "apollo-boost": "^0.4.4",
+    "graphql": "^14.5.6",
+    "graphql-tag": "^2.10.1",
     "next": "10.0.7",
+    "next-apollo": "^3.1.2",
+    "next-server": "^9.0.5",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-apollo": "^3.1.1",
+    "react-dom": "17.0.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.1",
+    "@storybook/addon-actions": "^6.1.20",
+    "@storybook/addon-essentials": "^6.1.20",
+    "@storybook/addon-links": "^6.1.20",
+    "@storybook/react": "^6.1.20",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.9.0"
   }
 }

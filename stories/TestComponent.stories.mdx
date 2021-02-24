@@ -1,0 +1,22 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
+import TestComponent from '../components/TestComponent'
+
+<Meta title="MDX/TestComponent" component={TestComponent} />
+
+# Header
+
+The default
+
+<Canvas>
+  <Story name="Default">
+    <TestComponent text="default" />
+  </Story>
+</Canvas>
+
+Un negrito
+
+<Canvas>
+  <Story name="Negrito">
+    <TestComponent text="negrito" />
+  </Story>
+</Canvas>
