@@ -1,13 +1,19 @@
 import '../styles/globals.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { ThemeProvider } from 'styled-components';
-import theme from '../themes/light'
+import theme from '../themes/light';
+import PublicLayout from '../components/PublicLayout';
 
-export default function App({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <PublicLayout>
+          <Component {...pageProps} />
+        </PublicLayout>
       </ThemeProvider>
     </>
-  )
-}
+  );
+};
+
+export default App;
